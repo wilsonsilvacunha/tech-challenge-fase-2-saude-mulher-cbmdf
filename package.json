@@ -1,0 +1,15 @@
+{
+  "name": "tech-challenge-fase-2-saude-mulher-cbmdf",
+  "version": "1.0.0",
+  "description": "Sistema inteligente para apoio ao diagnóstico em saúde da mulher no contexto do CBMDF utilizando PLN e Machine Learning",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,18 @@
+om fastapi import FastAPI
+import joblib
+
+app = FastAPI()
+
+# Carregar modelo e vectorizer (vamos configurar depois)
+modelo = None
+vectorizer = None
+
+@app.get("/")
+def home():
+    return {"mensagem": "API de diagnóstico funcionando 🚀"}
+
+@app.get("/prever")
+def prever(texto: str):
+    vetor = vectorizer.transform([texto])
+    resultado = modelo.predict(vetor)
+    return {"diagnostico": resultado[0]}
